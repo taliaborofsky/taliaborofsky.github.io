@@ -24,8 +24,41 @@ description: >- # this means to ignore newlines until "baseurl:"
   Under construction
 baseurl: "" # the subpath of your site, e.g. /blog (leave blank for a username.github.io repo)
 url: "https://taliaborofsky.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username: taliaborofsky
+
+author:
+  name: "Talia Borofsky"
+  avatar: "/assets/images/talia-headshot.jpg"
+  bio: "Postdoctoral Research Associate, High Meadows Environmental Institute, Princeton University"
+  location: "Princeton, NJ"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:tb3226@princeton.edu"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=zbxm15gAAAAJ&hl=en"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/talia-borofsky-9610a479/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/taliaborofsky"
+
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:tb3226@princeton.edu"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=zbxm15gAAAAJ&hl=en"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/talia-borofsky-9610a479/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/taliaborofsky"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.28.1"

@@ -5,7 +5,7 @@ permalink: /about/
 author_profile: true
 ---
 
-I'm a postdoctoral research associate at the High Meadows Environmental Institute, Princeton University, working on the evolution of social learning, cooperative hunting, and adaptive behavior in predator-prey systems.
+I'm a postdoctoral research associate in Simon Levin's lab at the High Meadows Environmental Institute, Princeton University, working on the feedback between predator group formation and prey populations.
 
 ## Education
 
@@ -17,7 +17,7 @@ Visiting Semester at Ben Gurion University, January–July 2017.
 
 ## Preprints
 
-Borofsky, T., Akçay, E., Rubenstein, D., Greenbaum, G., & Levin, S. (2025). Coupled dynamics of predator group formation and prey populations. *bioRxiv*.
+Borofsky, T., Akçay, E., Rubenstein, D., Greenbaum, G., & Levin, S. (2025). [Coupled dynamics of predator group formation and prey populations](https://doi.org/10.64898/2025.12.26.696504). *bioRxiv*.
 
 ## Publications
 
