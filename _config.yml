@@ -30,11 +30,7 @@ author:
   name: "Talia Borofsky"
   avatar: "/assets/images/talia-headshot.jpg"
   bio: "Postdoctoral Research Associate, High Meadows Environmental Institute, Princeton University"
-  location: "Princeton, NJ"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:tb3226@princeton.edu"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=zbxm15gAAAAJ&hl=en"
@@ -47,9 +43,6 @@ author:
 
 footer:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:tb3226@princeton.edu"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=zbxm15gAAAAJ&hl=en"
@@ -64,6 +57,7 @@ footer:
 remote_theme: "mmistakes/minimal-mistakes@4.28.1"
 minimal_mistakes_skin: "default" # options: default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-paginate
