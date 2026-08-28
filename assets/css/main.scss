@@ -25,10 +25,15 @@
     width: auto;
     height: auto;
   }
+  .author__content {
+    display: block;
+    width: 100%;
+    padding-inline: 0;
+  }
   .page {
     float: inline-end;
     width: calc(100% - 300px);
-    padding-inline-end: 300px;
+    padding-inline-end: 2em;
   }
 
   /* The theme also hides the author links (Google Scholar/LinkedIn/GitHub)
@@ -61,7 +66,14 @@
   max-width: 160px;
 }
 
-/* Color scheme */
+/* Color scheme
+   Masthead background: #DAD3FF (light purple)
+   Site title text:     #5E095E (plum)
+   Top nav "CV" link:   #2C592E (dark green)
+   Sidebar background:  #B1DAB1 (light green)
+   Sidebar text:        #5E095E (plum)
+   Main content background: #fff (white)
+   ========================================================================== */
 body {
   background-color: #fff;
 }
@@ -101,4 +113,20 @@ body {
 
 .greedy-nav .visible-links a {
   color: #2C592E;
+}
+
+/* Center everything in the sidebar */
+.sidebar,
+.author__content,
+.author__urls-wrapper {
+  text-align: center;
+}
+.author__avatar {
+  text-align: center;
+}
+.author__avatar img {
+  margin-inline: auto;
+}
+.author__urls {
+  text-align: start;
 }
