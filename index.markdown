@@ -2,10 +2,24 @@
 layout: single
 title: CV
 permalink: /
-author_profile: true
+classes: wide
+author_profile: false
 ---
 
-I'm a postdoctoral research associate in Simon Levin's lab at the High Meadows Environmental Institute, Princeton University, working on the feedback between predator group formation and prey populations.
+<div class="hero">
+  <img class="hero__photo" src="/assets/images/talia-headshot.jpg" alt="Talia Borofsky">
+  <div class="hero__content">
+    <p class="hero__eyebrow">Postdoctoral Research Associate</p>
+    <p class="hero__affiliation">High Meadows Environmental Institute<br>Princeton University</p>
+    <hr class="hero__rule">
+    <p>I'm a postdoctoral research associate in Simon Levin's lab at the High Meadows Environmental Institute, Princeton University, working on the feedback between predator group formation and prey populations.</p>
+    <div class="hero__links">
+      <a class="hero__link" href="https://scholar.google.com/citations?user=zbxm15gAAAAJ&hl=en">Google Scholar</a>
+      <a class="hero__link" href="https://www.linkedin.com/in/talia-borofsky-9610a479/">LinkedIn</a>
+      <a class="hero__link" href="https://github.com/taliaborofsky">GitHub</a>
+    </div>
+  </div>
+</div>
 
 ## Education
 

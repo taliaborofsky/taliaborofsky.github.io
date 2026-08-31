@@ -10,68 +10,11 @@
    Custom overrides
    ========================================================================== */
 
-/* The theme normally switches to a 200px sidebar at 64em, then widens it
-   again to 300px at 80em -- that second jump is what caused the "funny"
-   text reflow at in-between window sizes. Instead: once the sidebar
-   appears (48em and up), keep it a single, consistent 300px width the
-   whole way, so it never resizes itself again. */
-@media (min-width: 48em) {
-  .sidebar {
-    float: inline-start;
-    width: calc(300px - 1em);
-  }
-  .author__avatar {
-    display: block;
-    width: auto;
-    height: auto;
-  }
-  .author__content {
-    display: block;
-    width: 100%;
-    padding-inline: 0;
-  }
-  .page {
-    float: inline-end;
-    width: calc(100% - 300px);
-    padding-inline-end: 2em;
-  }
-
-  /* The theme also hides the author links (Google Scholar/LinkedIn/GitHub)
-     behind the "Follow" popup button until 64em, separately from the
-     sidebar layout switch above. Move that to match, so the links show
-     as a plain list as soon as the sidebar does. */
-  .author__urls-wrapper {
-    display: block;
-  }
-  .author__urls-wrapper button {
-    display: none;
-  }
-  .author__urls {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-  .author__urls::before,
-  .author__urls::after {
-    display: none;
-  }
-}
-
-/* Bigger profile photo, sized to fit the wider sidebar */
-.author__avatar img {
-  max-width: 160px;
-}
-
 /* Color scheme
    Masthead background: #DAD3FF (light purple)
    Site title text:     #5E095E (plum)
    Top nav "CV" link:   #2C592E (dark green)
-   Sidebar background:  #B1DAB1 (light green)
-   Sidebar text:        #5E095E (plum)
+   Hero eyebrow/accent: #2C592E (dark green)
    Main content background: #fff (white)
    ========================================================================== */
 body {
@@ -91,44 +34,68 @@ body {
   font-size: 1.6em;
 }
 
-.sidebar {
-  background-color: #B1DAB1;
-  padding: 1em;
-}
-
-.sidebar,
-.sidebar p,
-.sidebar li,
-.sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6,
-.author__name,
-.author__bio,
-.author__urls a {
-  color: #5E095E;
-}
-
-/* Keep the sidebar fully visible instead of the theme's default dim-until-hovered effect */
-.sidebar {
-  opacity: 1 !important;
-}
-
 .greedy-nav .visible-links a {
   color: #2C592E;
 }
 
-/* Center everything in the sidebar */
-.sidebar,
-.author__content,
-.author__urls-wrapper {
-  text-align: center;
+/* Hero section (photo + bio side by side) at the top of the homepage */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: flex-start;
+  margin-bottom: 2em;
+  background-color: #C1E1C1;
+  padding: 2em;
+  border-radius: 4px;
 }
-.author__avatar {
-  text-align: center;
+.hero__photo {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 4px;
+  flex-shrink: 0;
 }
-.author__avatar img {
-  margin-inline: auto;
+.hero__content {
+  flex: 1;
+  min-width: 260px;
 }
-.author__urls {
-  text-align: start;
+.hero__eyebrow {
+  color: #2C592E;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+}
+.hero__affiliation {
+  color: #1a1a1a;
+  margin-top: 0;
+}
+.hero__content p {
+  color: #1a1a1a;
+}
+.hero__rule {
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+  margin: 1.25em 0;
+}
+.hero__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+  margin-top: 1.5em;
+}
+.hero__link {
+  display: inline-block;
+  padding: 0.5em 1.25em;
+  border: 1px solid #2C592E;
+  border-radius: 999px;
+  color: #2C592E;
+  text-decoration: none;
+  font-weight: 600;
+}
+.hero__link:hover {
+  background-color: #2C592E;
+  color: #fff;
 }
 
 /* Portfolio page image grid */

@@ -2,7 +2,8 @@
 layout: single
 title: Portfolio
 permalink: /portfolio/
-author_profile: true
+classes: wide
+author_profile: false
 ---
 
 <div class="portfolio-gallery">
